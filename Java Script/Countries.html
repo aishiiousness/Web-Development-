@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ select{
+ color:green;
+ /* This is a single-line comment */
+ text-align: center;
+ }
+ /* This is a multi-line comment */
+ </style>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Select here</title>
+</head>
+<script type="text/javascript">
+function displayCapital(change) {
+var value = change.value;
+alert('Capital is: ' + value); }
+</script>
+<body bgcolor="yellow"><center>
+<select id="country" onchange="displayCapital(this)">
+<option value="Washington DC">USA</option>
+<option value="New Delhi">India</option>
+<option value="Beijing">China</option>
+<option value="Tokyo">Japan</option>
+<option value="Berlin">Germany</option>
+</select>
+</center>
+</body>
+</html>
