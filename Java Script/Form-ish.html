@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initialscale=1">
+ <title>Example-3</title>
+ </head>
+ <body bgcolor=yellow><center>
+ <div class="container">
+ <div class="row">
+ <div class="col-md-4">
+ <h1>Program: 03</h1>
+ <form name="f1" >
+ <div class="form-group">
+ <textarea name="tb1" placeholder="Enter text"
+></textarea> </div>
+ <button onClick="return validateForm()"
+type="button" class="btn btn-default">Submit</button>
+ <hr/> </form>
+
+
+ </div>
+
+ </div>
+</div>
+ <script language="javascript" type="text/javascript">
+ function validateForm()
+ {
+ var d=document.f1;
+ if(d.tb1.value=="")
+ {
+ alert("Please Enter Text");
+ d.tb1.focus();
+ return false;
+ }
+
+ var str = d.tb1.value;
+var str_length = str.length;
+var str_lines = str.split(/\r\n|\r|\n/).length
+var no_of_words = countWords(str);
+alert('Number of Words: ' + no_of_words + ' Length: ' +
+str_length + ' Number of Lines:' +str_lines ); }
+function countWords(str) {
+return str.split(/\s+/).length;
+}
+
+ </script></center>
+ </body>
+</html>
